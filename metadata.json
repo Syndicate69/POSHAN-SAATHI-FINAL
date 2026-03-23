@@ -1,0 +1,5 @@
+{
+  "name": "POSHAN SAATHI NXT v2.0",
+  "description": "Intelligent Nutrition Companion, An AI powered personal Nutrition Counselor for Nepal.",
+  "requestFramePermissions": ["camera"]
+}
