@@ -1,5 +1,5 @@
-import type { NextConfig } from 'next';
- 
+import type {NextConfig} from 'next';
+
 const nextConfig: NextConfig = {
   output: 'standalone',
   outputFileTracingRoot: process.cwd(),
@@ -59,4 +59,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-exports default nextConfig;
+export default nextConfig;
