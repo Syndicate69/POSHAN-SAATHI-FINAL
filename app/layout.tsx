@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import './globals.css'; // Global styles
+import './globals.css';
 import { ThemeProvider } from '../components/ThemeProvider';
 import { LanguageProvider } from '../components/LanguageProvider';
 import { OfflineIndicator } from '../components/OfflineIndicator';
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   appleWebApp: {
     capable: true,
-    statusBarStyle: 'default',
+    statusBarStyle: 'black-translucent',
     title: 'Poshan Saathi',
   },
   formatDetection: {
@@ -55,10 +55,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${outfit.variable} ${notoSansDevanagari.variable}`}>
       <head>
+        <meta name="mobile-web-app-capable" content="yes" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
